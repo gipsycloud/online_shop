@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/constrants.dart';
-import 'package:online_shop/screens_home/home_screen.dart';
+import 'package:online_shop/screens/home/home_screen.dart';
 
 void main() {
   runApp(MyApp());
