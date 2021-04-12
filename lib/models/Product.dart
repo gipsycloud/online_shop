@@ -22,7 +22,7 @@ List<Product> products = [
       price: 1000,
       size: 12,
       description: dummyText,
-      image: "assets/images/bad_1.png",
+      image: "assets/images/bag_1.jpg",
       color: Color(0xFF3D8AE)),
   Product(
       id: 2,
@@ -30,8 +30,32 @@ List<Product> products = [
       price: 2000,
       size: 22,
       description: dummyText,
-      image: "assets/images/bad_2.png",
-      color: Color(0xFF3D8AE))
+      image: "assets/images/bag_2.jpg",
+      color: Color(0xFF3D8AE)),
+  Product(
+      id: 3,
+      title: "Office Code 3",
+      price: 2000,
+      size: 22,
+      description: dummyText,
+      image: "assets/images/bag_3.jpg",
+      color: Color(0xFF3D8AE)),
+  Product(
+      id: 4,
+      title: "Office Code 4",
+      price: 2000,
+      size: 22,
+      description: dummyText,
+      image: "assets/images/bag_4.jpg",
+      color: Color(0xFF3D8AE)),
+  Product(
+      id: 5,
+      title: "Office Code 5",
+      price: 2000,
+      size: 22,
+      description: dummyText,
+      image: "assets/images/bag_5.jpg",
+      color: Color(0xFF3D8AE)),
 ];
 
 String dummyText =
