@@ -15,6 +15,12 @@ class Product {
   });
 }
 
+Color a = const Color(0xFF3D85AE);
+Color b = const Color(0xFFD3A984);
+Color c = const Color(0xFFE6B398);
+Color d = const Color(0xFFFB7883);
+Color e = const Color(0xFFAEAEAE);
+
 List<Product> products = [
   Product(
       id: 1,
@@ -23,7 +29,7 @@ List<Product> products = [
       size: 12,
       description: dummyText,
       image: "assets/images/bag_1.jpg",
-      color: Color(0xFF3D8AE)),
+      color: a),
   Product(
       id: 2,
       title: "Office Code 2",
@@ -31,7 +37,7 @@ List<Product> products = [
       size: 22,
       description: dummyText,
       image: "assets/images/bag_2.jpg",
-      color: Color(0xFF3D8AE)),
+      color: b),
   Product(
       id: 3,
       title: "Office Code 3",
@@ -39,7 +45,7 @@ List<Product> products = [
       size: 22,
       description: dummyText,
       image: "assets/images/bag_3.jpg",
-      color: Color(0xFF3D8AE)),
+      color: c),
   Product(
       id: 4,
       title: "Office Code 4",
@@ -47,7 +53,7 @@ List<Product> products = [
       size: 22,
       description: dummyText,
       image: "assets/images/bag_4.jpg",
-      color: Color(0xFF3D8AE)),
+      color: d),
   Product(
       id: 5,
       title: "Office Code 5",
@@ -55,7 +61,7 @@ List<Product> products = [
       size: 22,
       description: dummyText,
       image: "assets/images/bag_5.jpg",
-      color: Color(0xFF3D8AE)),
+      color: e),
 ];
 
 String dummyText =
