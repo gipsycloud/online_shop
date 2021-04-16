@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop/constrants.dart';
+// import 'package:online_shop/constrants.dart';
 import 'package:online_shop/models/Product.dart';
+import 'package:online_shop/screens/details/components/color_and_size.dart';
+import 'package:online_shop/screens/details/components/product_title_with_image.dart';
 
 class Body extends StatelessWidget {
   final Product product;
@@ -18,60 +21,22 @@ class Body extends StatelessWidget {
             child: Stack(
               children: <Widget>[
                 Container(
-                  margin: EdgeInsets.only(top: size.height * 0.4),
-                  height: 500,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(24),
-                        topRight: Radius.circular(24),
-                      )),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        "Aristocratice Hand Bag",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      Text(
-                        product.title,
-                        style: Theme.of(context).textTheme.headline4.copyWith(
-                            color: Colors.white, fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(
-                        height: kDefaultPaddin,
-                      ),
-                      Row(
-                        children: <Widget>[
-                          RichText(
-                              text: TextSpan(children: [
-                            TextSpan(text: "Price\n"),
-                            TextSpan(
-                                text: "\$${product.price}",
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .headline4
-                                    .copyWith(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold))
-                          ])),
-                          SizedBox(
-                            width: kDefaultPaddin,
-                          ),
-                          Expanded(
-                              child: Image.asset(
-                            product.image,
-                            fit: BoxFit.fill,
-                          ))
-                        ],
-                      )
-                    ],
-                  ),
-                )
+                    margin: EdgeInsets.only(top: size.height * 0.4),
+                    padding: EdgeInsets.only(
+                        top: size.height * 0.12,
+                        left: kDefaultPaddin,
+                        right: kDefaultPaddin),
+                    height: 500,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(24),
+                          topRight: Radius.circular(24),
+                        )),
+                    child: Column(
+                      children: <Widget>[ColorAndSize(product: product)],
+                    )),
+                ProductTitleWithImage(product: product)
               ],
             ),
           )
@@ -80,3 +45,5 @@ class Body extends StatelessWidget {
     );
   }
 }
+
+// 22:44

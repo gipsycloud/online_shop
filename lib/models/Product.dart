@@ -28,7 +28,7 @@ List<Product> products = [
       price: 1000,
       size: 12,
       description: dummyText,
-      image: "assets/images/bag_1.jpg",
+      image: "assets/images/bag_1.png",
       color: a),
   Product(
       id: 2,
@@ -36,7 +36,7 @@ List<Product> products = [
       price: 2000,
       size: 22,
       description: dummyText,
-      image: "assets/images/bag_2.jpg",
+      image: "assets/images/bag_2.png",
       color: b),
   Product(
       id: 3,
